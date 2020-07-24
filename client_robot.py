@@ -39,7 +39,7 @@ except socket.gaierror:
   
 # connecting to the server 
 s.connect((host_ip, port)) 
-list_s = [31,90,4]
+list_s = [11,90,94]
 data = listToString(list_s)
 print(data)
 s.send(data.encode('utf-8'))
