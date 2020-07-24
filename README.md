@@ -4,3 +4,6 @@
 ## required
 - [x] python
 - [x] socket
+
+## author
+> <a href="https://me-danuandrean.github.io/">Danu andrean</a>
