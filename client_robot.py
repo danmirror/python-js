@@ -20,7 +20,7 @@ def listToString(s):
         str1 = str1[:-1]
     # return string   
     return str1  
-    
+
 try: 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
     print ("Socket successfully created")
@@ -39,11 +39,12 @@ except socket.gaierror:
   
 # connecting to the server 
 s.connect((host_ip, port)) 
-list_s = [2,3,4]
+list_s = [31,90,4]
 data = listToString(list_s)
 print(data)
 s.send(data.encode('utf-8'))
-msg = s.recv(1024)
+msg = s.recv(1020)
+# msg =  msg.decode()       #khusus python terbaru
 msg= Convert(msg)
 print(msg)
 s.close()
